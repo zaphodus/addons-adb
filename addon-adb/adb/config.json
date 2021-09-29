@@ -8,9 +8,11 @@
   "startup": "services",
   "ports": {
     "5037/tcp": 5037
+    "5555/tcp": 5555
   },
   "ports_description": {
-    "5037/tcp": "ADB Server"
+    "5037/tcp": "ADB Server",
+    "5555/tcp": "Android TV"
   },
   "arch": ["aarch64", "amd64", "armv7", "i386"],
   "init": false,
