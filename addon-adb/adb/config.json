@@ -25,5 +25,5 @@
     "devices": ["str"],
     "reconnect_timeout": "int"
   },
-  "usb": true
+  "full_access": true
 }
