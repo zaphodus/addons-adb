@@ -2,8 +2,6 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base/amd64:6.1.4
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
-WORKDIR /root
-
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
