@@ -2,6 +2,8 @@ ARG BUILD_FROM=ghcr.io/hassio-addons/ubuntu-base/amd64:6.1.4
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
+WORKDIR /root
+
 # Set shell
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
@@ -16,6 +18,7 @@ RUN \
         android-libbase=1:7.0.0+r33-2 \
         android-libcutils=1:7.0.0+r33-2 \
         android-liblog=1:7.0.0+r33-2 \
+        usbutils
     \
     && rm -fr \
         /tmp/* \
