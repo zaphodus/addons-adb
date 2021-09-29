@@ -18,16 +18,16 @@ then
     bashio::exit.nok
 fi
 
-if ! bashio::config.has_value 'devices'; then
-    bashio::log.warning
-    bashio::log.warning 'No devices are specified!'
-    bashio::log.warning
-    bashio::log.warning 'The ADB add-on connects to Android device, but you'
-    bashio::log.warning 'have left the "devices" add-on option empty.'
-    bashio::log.warning
-    bashio::log.warning 'The add-on might not work as expected.'
-    bashio::log.warning
-fi
+#if ! bashio::config.has_value 'devices'; then
+#    bashio::log.warning
+#    bashio::log.warning 'No devices are specified!'
+#    bashio::log.warning
+#    bashio::log.warning 'The ADB add-on connects to Android device, but you'
+#    bashio::log.warning 'have left the "devices" add-on option empty.'
+#    bashio::log.warning
+#    bashio::log.warning 'The add-on might not work as expected.'
+#    bashio::log.warning
+#fi
 
 # Default storage keys path storage location
 path="/data"

@@ -20,12 +20,14 @@ if ! bashio::fs.file_exists "${path}/adbkey"; then
 fi
 
 # Try to (re)connect to all devices
-if bashio::config.has_value 'devices'; then
-    while read -r device; do
-        bashio::log.info "Connecting to device: ${device}..."
-        adb connect "${device}"
-    done <<< "$(bashio::config 'devices')"
-fi
+#if bashio::config.has_value 'devices'; then
+#    while read -r device; do
+#        bashio::log.info "Connecting to device: ${device}..."
+#        adb connect "${device}"
+#    done <<< "$(bashio::config 'devices')"
+#fi
+
+adb forward tcp:5555 tcp:5555
 
 # Sleep until next loop
 exec sleep "$(bashio::config 'reconnect_timeout')"
