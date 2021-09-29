@@ -1,4 +1,4 @@
 # source https://github.com/hassio-addons/addon-adb
 name: Android Debug Bridge
-url: 'https://github.com/zaphodus/addons-adb'
+url: 'https://github.com/zaphodus/hass_addons'
 maintainer: https://github.com/frenck>
